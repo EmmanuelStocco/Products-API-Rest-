@@ -1,7 +1,9 @@
+import { Produto } from "./produto.model";
 export declare class ProdutosController {
-    obterTodos(): string;
-    obterUm(params: any): string;
-    criar(produto: any): string;
-    alterar(produto: any): string;
-    apagar(params: any): string;
+    produtos: Produto[];
+    obterTodos(): Produto[];
+    obterUm(params: any): Produto;
+    criar(produto: Produto): void;
+    alterar(produto: Produto): Produto;
+    apagar(params: any): void;
 }
